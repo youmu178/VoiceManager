@@ -6,9 +6,12 @@ VoiceManager
 4.代码总布局已经写好，可以自己修改；<br/>
 这个包可以直接依赖。<br/>
 
-用法：VoiceManage mVoiceManage = new VoiceManage(mActivity, v, path);//初始化<br/>
-      mVoiceManage.sessionRecord(true);// 开始录音<br/>
-      mVoiceManage.sessionPlay(true, mFilePath);// 播放录音<br/>
+用法：VoiceManage mVoiceManage = new VoiceManage(mActivity, v, path);//初始化  
+
+      mVoiceManage.sessionRecord(true);// 开始录音  
+      
+      mVoiceManage.sessionPlay(true, mFilePath);// 播放录音  
+      
 
 第一个参数为： Activity上下文，<br/>
 第二个参数为： view 这个view具体是干嘛的？ 是干录完返回的，具体的返回方法自己定义，返回录音文件路径，<br/>
