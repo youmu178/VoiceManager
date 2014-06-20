@@ -7,7 +7,8 @@ VoiceManager
 这个包可以直接依赖。<br/>
 
 用法：  
-      VoiceManage mVoiceManage = new VoiceManage(mActivity, v, path);//初始化  
+        
+        VoiceManage mVoiceManage = new VoiceManage(mActivity, v, path);//初始化  
 
       mVoiceManage.sessionRecord(true);// 开始录音  
       
