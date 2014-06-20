@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/unit_voice_play_root"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/text_bgblue" 
+    android:visibility="gone"
+>
+	<ImageView
+		android:id="@+id/unit_voice_play_operate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/voice_play"
+        android:padding="20dp" 
+	/>
+	
+	<ImageView
+		android:id="@+id/unit_voice_play_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/voice_stop"
+        android:padding="20dp" 
+	/>
+	
+	<SeekBar
+		android:id="@+id/unit_voice_play_progress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/unit_voice_play_operate"
+        android:layout_toLeftOf="@+id/unit_voice_play_stop"
+        android:progressDrawable="@drawable/playbar_style"
+        android:thumb="@drawable/voice_progress"
+        android:thumbOffset="0dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+	/>
+	
+	<TextView
+		android:id="@+id/unit_voice_play_current"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/unit_voice_play_progress"
+        android:layout_alignLeft="@id/unit_voice_play_progress" 
+        android:textColor="#ffffffff"
+        android:gravity="center"
+        android:textSize="12sp" 
+        android:text="00:00:00"
+	/>
+	
+	<TextView
+		android:id="@+id/unit_voice_play_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/unit_voice_play_progress"
+        android:layout_alignRight="@id/unit_voice_play_progress" 
+        android:textColor="#ffffffff"
+        android:gravity="center"
+        android:textSize="12sp" 
+        android:text="00:00:00"
+	/>
+</RelativeLayout>
